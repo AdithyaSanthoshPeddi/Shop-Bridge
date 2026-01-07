@@ -4,14 +4,17 @@
     <title>Add Product</title>
 </head>
 <body>
-<h2>Add Product</h2>
+
+<h2>Add Product to {{ shop_name }}</h2>
 
 <form method="post">
     <input type="text" name="name" placeholder="Product Name" required><br><br>
     <input type="number" name="price" placeholder="Price" required><br><br>
-    <button type="submit">Add</button>
+    <button type="submit">Add Product</button>
 </form>
 
-<a href="/">Back</a>
+<br>
+<a href="/shop/{{ shop_name }}">Back</a>
+
 </body>
 </html>

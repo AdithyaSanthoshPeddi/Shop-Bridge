@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - ShopBridge</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f6f8;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 30px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .buyer {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .owner {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .login-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Login as</h2>
+
+    <form method="post">
+        <button class="login-btn buyer" name="role" value="buyer">
+            Buyer
+        </button>
+
+        <button class="login-btn owner" name="role" value="owner">
+            Shop Owner
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopBridge - Shops</title>
+</head>
+<body>
+
+<h2>Available Shops</h2>
+
+<ul>
+{% for shop in shops %}
+    <li>
+        {{ shop }}
+        <a href="/shop/{{ shop }}">Enter</a>
+    </li>
+{% endfor %}
+</ul>
+
+<br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>

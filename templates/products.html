@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ shop_name }}</title>
+</head>
+<body>
+
+<h2>Products in {{ shop_name }}</h2>
+
+<ul>
+{% for p in products %}
+    <li>{{ p.name }} - ₹{{ p.price }}</li>
+{% endfor %}
+</ul>
+
+{% if role == "owner" %}
+    <br>
+    <a href="/add/{{ shop_name }}">➕ Add Product</a>
+{% endif %}
+
+<br><br>
+<a href="/">⬅ Back</a>
+
+</body>
+</html>
