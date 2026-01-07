@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopBridge</title>
+</head>
+<body>
+<h2>Available Products</h2>
+
+{% for p in products %}
+<p>{{ p.name }} - ₹{{ p.price }}</p>
+{% endfor %}
+
+<a href="/add">Add Product</a>
+</body>
+</html>
